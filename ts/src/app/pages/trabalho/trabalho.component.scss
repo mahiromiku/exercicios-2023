@@ -1,0 +1,378 @@
+//Aside menu
+
+aside{
+  width: 220px;
+  min-height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 0 5px 0 #E7E7E7;
+}
+
+aside header{
+  width: 220px;
+  height: 68px;
+  background: linear-gradient(#FFB354, #EE7A3A);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside header span{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+aside img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+aside ul{
+  list-style-type: none;
+}
+
+aside ul a{
+  text-decoration: none;
+}
+
+aside ul li{
+  width: 220px;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  padding-left: 24px;
+  color: #725C5C;
+  border-bottom: 2px solid #E7E7E7;
+  position: relative;
+}
+
+aside ul li:hover{
+  background: #FDF1EB;
+}
+
+aside a:hover li div{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: linear-gradient(#FFB455, #ED7839);
+}
+
+//Header do main
+main{
+  margin-left: 220px;
+}
+
+main > header{
+  width: 100%;
+  height: 68px;
+  background-color: #FDF1EB;
+  padding: 0 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evento p{
+  color: #725C5C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.evento p:nth-of-type(1){
+  padding-top: 5px;
+}
+
+.evento p:not(:nth-of-type(1)){
+  padding-top: 2px;
+}
+
+.evento p:nth-of-type(2){
+  font-size: 22px;
+  line-height: 25.78px;
+}
+
+.perfil{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333333;
+}
+
+.perfil__linguas #btLinguas{
+  width: 97px;
+  height: 34px;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  color: #333333;
+  font-size: 14px;
+  line-height: 17.5px;
+}
+
+.perfil__usuario{
+  display: flex;
+  align-items: center;
+}
+
+.usuario__dados{
+  margin-left: 22px;
+}
+
+.usuario__dados p{
+  text-align: right;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.usuario__dados p:nth-of-type(1){
+  font-size: 14px;
+  line-height: 17.5px;
+}
+
+.usuario__dados p:nth-of-type(2){
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.usuario__foto{
+  margin-left: 2px;
+}
+
+.usuario__foto img{
+  width: 30.3px;
+  border-radius: 50%;
+}
+
+
+//main content
+.content{
+  padding: 20px 45px 50px 45px;
+}
+
+.content__descricao{
+  display: flex;
+  justify-content: space-between;
+}
+
+.descricao__video h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 5%;
+  width: 786px;
+  height: 54px;
+  color: #ED7839;
+  margin-bottom: 19px;
+}
+
+.detalhes__buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.detalhes__buttons button{
+  color: #fff;
+  background-color: #ED7839;
+  border-radius: 4px;
+  border: 0;
+  height: 31px;
+  width: 43px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.detalhes__buttons button:nth-of-type(1){
+  width: 120px;
+}
+
+.detalhes__buttons button i{
+  font-size: 19px;
+}
+
+.detalhes__buttons button img{
+  width: 19px;
+  height: 19px;
+}
+
+.descricao__detalhes > p{
+  text-align: right;
+  letter-spacing: 5%;
+  line-height: 25px;
+  size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #ED7839;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.detalhes__dados{
+  width: 242px;
+  height: 439px;
+  border: 1px solid #ECECEC;
+}
+
+.detalhes__dados header{
+  background-color: #FDF1EB;
+  height: 45px;
+  padding: 11px 15px 9px 15px;
+}
+
+.detalhes__dados header span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+}
+
+.dados__container{
+  padding: 15px;
+  overflow-y: scroll;
+  max-height: 364px;
+}
+
+.dados__container ul{
+  list-style-type: none;
+}
+
+.dados__container__parte1, .dados__container__parte2{
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 2%;
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.dados__container__parte3{
+  color: #ADA0A0;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2%;
+  line-height: 12px;
+}
+
+.content__resumo{
+  border: 1px solid #ECECEC;
+  min-height: 189px;
+  margin-top: 30px;
+}
+
+.content__resumo header{
+  background: #FDF1EB;
+  padding: 10px 15px;
+  height: 45px;
+  border-radius: 3px 3px 0 0;
+}
+
+.content__resumo header{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+}
+
+.resumo__container{
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 2%;
+  color: #5C5C5C;
+}
+
+.resumo__container a{
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 21.33px;
+  color: #ED7839;
+}
+
+.content__discussoes{
+  border: 1px solid #ECECEC;
+  margin-top: 30px;
+  border-radius: 3px 3px 0 0;
+}
+
+.content__discussoes header{
+  height: 45px;
+  background: #FDF1EB;
+  padding: 10px 16px;
+}
+
+.content__discussoes header span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+}
+
+.discussoes__container{
+  padding: 15px;
+}
+
+.discussoes__container__topicos{
+  text-align: center;
+}
+
+.discussoes__container__topicos h3{
+  color: #ED7839;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  margin-bottom: 27px;
+}
+
+.topicos__simbolos{
+  display: flex;
+  height: 48.94px;
+  max-width: 256.26px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35.06px;
+}
+
+.discussoes__container__topicos p{
+  margin: 0 auto;
+  max-width: 626px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  size: 14px;
+  line-height: 19.25px;
+  margin-bottom: 14px;
+}
+
+.discussoes__container__topicos button{
+  width: 133px;
+  height: 32px;
+  background: linear-gradient(#FEB254, #F0813D);
+  border: 0;
+  border-radius: 1px;
+  box-shadow: 0 2px 2px 0 #E7E7E7;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  size: 15px;
+  line-height: 16px;
+  color: #fff;
+  position: relative;
+  transform: translateY(50%);
+}
+
+.discussoes__container__topicos hr{
+  height: 1px;
+  background-color: #E7E7E7;
+}
