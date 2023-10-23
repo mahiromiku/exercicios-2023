@@ -1,0 +1,54 @@
+<div *ngIf="isActiveCard; else CardReduzido">
+  <app-card (click)="trocarCondicaoDoCard()"></app-card>
+</div>
+<ng-template #CardReduzido>
+  <app-card (click)="trocarCondicaoDoCard()"></app-card>
+  <article class="resposta__autor autor-color">
+    <header>
+      <span>Adriano da Silva</span>
+      <div class="autor">
+        <span class="autor__tipo">Autor</span>
+        <img src="../../../assets/vv.png" alt="vV">
+      </div>
+    </header>
+    <div class="autor__body">
+      Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+    </div>
+  </article>
+  <article class="resposta__autor autor-color">
+    <header>
+      <span>Carlos Henrique Santos</span>
+    </header>
+    <div class="autor__body">
+      Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+      <br><br>
+      Obrigada pela resposta, muito interessante o seu trabalho!
+    </div>
+  </article>
+  <article class="resposta__autor autor-color">
+    <header>
+      <span>Carmila Ferreira Andrade</span>
+      <div class="autor">
+        <span class="autor__tipo">Coautor</span>
+        <img src="../../../assets/vv.png" alt="vV">
+      </div>
+    </header>
+    <div class="autor__body">
+      Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+      <br><br>
+      Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+    </div>
+  </article>
+  <article class="resposta__autor autor-color">
+    <header>
+      <span>Ana Carolina</span>
+      <div class="autor">
+        <span class="autor__tipo">Coautor</span>
+        <img src="../../../assets/vv.png" alt="vV">
+      </div>
+    </header>
+    <div class="autor__body">
+      Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+    </div>
+  </article>
+</ng-template>

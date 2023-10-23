@@ -1,0 +1,56 @@
+<div class="discussoes__container__topicos" *ngIf="isTopicCreated; else editorTopico">
+  <h3>Compartilhe suas ideias ou dúvidas como os autores!</h3>
+  <div class="topicos__simbolos">
+    <img src="../../../assets/icone1.png" alt="icone 1">
+    <img src="../../../assets/icone2.png" alt="icone 2">
+    <img src="../../../assets/icone3.png" alt="icone 3">
+  </div>
+  <p>
+    Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+  </p>
+  <button (click)="TrocarCondicaoTopicoCriado()"><i class="fa-solid fa-plus"></i> criar tópico</button>
+  <hr>
+</div>
+<ng-template #editorTopico>
+  <div class="editor" *ngIf="wasSend; else enviarNovamente">
+    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+    <form action="#">
+      <div class="editor__assunto">
+        <label for="">Assunto</label>
+        <input placeholder="Defina um tópico sucinto para notificar os autores..." id="" type="text">
+      </div>
+      <div class="editor__conteudo">
+        <label for="">Conteúdo</label>
+        <textarea id=""></textarea>
+      </div>
+      <div class="editor__enviar">
+        <input type="submit" value="Enviar" (click)="TrocarCondicaoEnviarTopico()">
+      </div>
+    </form>
+    <hr>
+  </div>
+  <ng-template #enviarNovamente>
+    <div class="mensagem-enviada">
+      <div class="mensagem-enviada__container">
+        <h4>Seu tópico foi enviado com sucesso! :D</h4>
+        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+        <a href="#">Descubra outros trabalhos!</a>
+        <button (click)="voltarAoTopicoInicial()">criar novo tópico</button>
+        <hr>
+      </div>
+      <div class="mensagem-enviada__feedback">
+        <div class="card__wrapper">
+          <div class="card__feedback">
+            <img src="../../../assets/vv_cinza.png" alt="vv">
+            <p>Aguardando feedback dos autores</p>
+            <a href="#">Editar tópico</a>
+          </div>
+          <!-- importação do card -->
+          <div style="margin-bottom: 28px;"></div>
+          <app-card class="blur"></app-card>
+          <!-- **** -->
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ng-template>

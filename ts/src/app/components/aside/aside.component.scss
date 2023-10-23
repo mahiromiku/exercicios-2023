@@ -1,0 +1,78 @@
+//Aside menu
+
+aside{
+  width: 220px;
+  min-height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 0 5px 0 #E7E7E7;
+  background: #fff;
+}
+
+aside header{
+  width: 100%;
+  height: 68px;
+  background: linear-gradient(#FFB354, #EE7A3A);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside header span{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+aside img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+aside ul{
+  list-style-type: none;
+}
+
+aside ul a{
+  text-decoration: none;
+}
+
+aside ul li{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  padding-left: 24px;
+  color: #725C5C;
+  border-bottom: 2px solid #E7E7E7;
+  position: relative;
+}
+
+aside ul li:hover{
+  background: #FDF1EB;
+}
+
+#active{
+  background: #FDF1EB;
+}
+
+aside a:hover li div, aside a:nth-of-type(5) li div{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: linear-gradient(#FFB455, #ED7839);
+}
+
+//responsivo
+
+@media screen and (max-width: 1349px) {
+  aside{
+    position: absolute;
+    left: -220px;
+    box-shadow: none;
+  }
+}

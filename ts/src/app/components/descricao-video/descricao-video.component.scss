@@ -1,0 +1,29 @@
+.descricao__video > h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 5%;
+  max-width: 786px;
+  height: 54px;
+  color: #ED7839;
+  margin-bottom: 19px;
+}
+
+.descricao__video > iframe{
+  width: 784px;
+  height: 439px;
+}
+
+@media screen and (max-width: 1349px) {
+
+  .descricao__video h2{
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .descricao__video iframe {
+    width: 100%;
+  }
+}

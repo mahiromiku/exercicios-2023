@@ -1,0 +1,46 @@
+.resposta__autor{
+  width: 100%;
+  border: 1px solid #E7E7E7;
+  background-color: #F8F8F8;
+  padding: 18px 23.19px 35px 23.19px;
+}
+
+.autor-color{
+  background-color: #F8F8F8;
+}
+
+.resposta__autor header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.resposta__autor header > span{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5C5C5C;
+}
+
+.resposta__autor .autor{
+  display: flex;
+  width: 102.03px;
+  justify-content: space-between;
+}
+
+.autor__tipo{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 14px !important;
+  line-height: 17.5px;
+  color: #ED7839 !important;
+}
+
+.autor__body{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #4D4D4D;
+}

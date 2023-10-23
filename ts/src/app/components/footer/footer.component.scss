@@ -1,0 +1,40 @@
+footer{
+  padding: 0 36px 54px 36px;
+  display: flex;
+  align-items: center;
+}
+
+.galoa__botao{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer img{
+  width: 200px;
+}
+
+footer button{
+  background-color: rgb(113, 71, 142);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: calc(5px);
+  width: 200px;
+  height: 30px;
+  border: 0;
+}
+
+.footer__informacoes{
+  padding: 25px 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #5c5c5c;
+  max-width: 967px;
+  width: 100%;
+}
+
+.footer__informacoes p:first-of-type{
+  padding-bottom: 10px;
+}

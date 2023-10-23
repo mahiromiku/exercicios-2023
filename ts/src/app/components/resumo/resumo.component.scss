@@ -1,0 +1,33 @@
+header{
+  background: #FDF1EB;
+  padding: 10px 15px;
+  height: 45px;
+  border-radius: 3px 3px 0 0;
+}
+
+header{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+}
+
+.resumo__container{
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 2%;
+  color: #5C5C5C;
+}
+
+.resumo__container span{
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 21.33px;
+  color: #ED7839;
+}

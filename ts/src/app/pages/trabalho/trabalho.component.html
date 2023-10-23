@@ -1,152 +1,32 @@
-<aside>
-  <header>
-    <span>SLACA 2019</span>
-  </header>
-  <img src="../../../assets/logo.png" alt="13 SLACA">
-  <nav>
-    <ul>
-      <a href="#"><li><div></div>Apresentação</li></a>
-      <a href="#"><li><div></div>Comitês</li></a>
-      <a href="#"><li><div></div>Autores</li></a>
-      <a href="#"><li><div></div>Eixos temáticos</li></a>
-      <a href="#"><li><div></div>Trabalhos</li></a>
-      <a href="#"><li><div></div>Contato</li></a>
-    </ul>
-  </nav>
-</aside>
+<app-aside></app-aside>
 <main>
-  <header>
-    <div class="evento">
-      <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-      <p>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
-      <p>ISSN: 1234-5678</p>
-    </div>
-    <div class="perfil">
-      <div class="perfil__linguas">
-        <select name="linguas" id="btLinguas">
-          <option value="ptbr">🌐 PT, BR</option>
-          <option value="eng">🌐 ENG</option>
-        </select>
-      </div>
-      <div class="perfil__usuario">
-        <div class="usuario__dados">
-          <p>Bem vindo!</p>
-          <p>alguem12@galoascience.com</p>
-        </div>
-        <div class="usuario__foto">
-          <img src="../../../assets/perfil.png" alt="perfil">
-        </div>
-      </div>
-    </div>
-  </header>
+  <div *ngIf="isMobile; else desktop">
+    <app-mobile-header></app-mobile-header>
+  </div>
+  <ng-template #desktop>
+    <app-desktop-header></app-desktop-header>
+  </ng-template>
   <div class="content">
     <section class="content__descricao">
-      <div class="descricao__video">
-        <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
-        <iframe width="784" height="439" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="descricao__detalhes">
-        <div class="detalhes__buttons">
-          <button><i class="fa-solid fa-download"></i> Download</button>
-          <button><i class="fa-solid fa-star"></i></button>
-          <button><img src="../../../assets/doi.png" alt="doi"></button>
-        </div>
-        <p>COMO CITAR ESSE TRABALHO?</p>
-        <article class="detalhes__dados">
-          <header>
-            <span>Detalhes</span>
-          </header>
-          <div class="dados__container">
-
-            <div class="dados__container__parte1">
-              <p>
-                Tipo de Apresentação: <strong>Pôster</strong>
-              </p>
-              <p>
-              Eixo temático: <strong>Alimentação e saúde (AS)</strong>
-              </p>
-              <p>
-                Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong>
-              </p>
-            </div>
-            <br>
-            <div class="dados__container__parte2">
-              <h3>
-                Autores:
-              </h3>
-              <ul>
-                <li>
-                  Galileo Galilei¹
-                </li>
-                <li>
-                  Berta Lange de Morretes²
-                </li>
-                <li>
-                  Isaac Newton³
-                </li>
-                <li>
-                  Cesar Lattes¹
-                </li>
-                <li>
-                  Stephen Hawking⁴
-                </li>
-              </ul>
-            </div>
-            <br>
-            <div class="dados__container__parte3">
-              <p>
-                ¹Universidade Estadual de Campinas
-              </p>
-              <p>
-                ²Universidade de São Paulo
-              </p>
-              <p>
-                ³Instituto Nacional de Pesquisas Espaciais
-              </p>
-              <p>
-                ⁴Universidade Federal do Rio de Janeiro
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
+      <app-descricao-video></app-descricao-video>
+      <app-descricao-detalhes></app-descricao-detalhes>
     </section>
     <section class="content__resumo">
-      <header>
-        <span>Resumo</span>
-      </header>
-      <div class="resumo__container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <a href="#">ver mais</a>
-      </div>
+      <app-resumo></app-resumo>
     </section>
     <section class="content__discussoes">
       <header>
         <span>Discussões</span>
       </header>
       <div class="discussoes__container">
-        <div class="discussoes__container__topicos">
-          <h3>Compartilhe suas ideias ou dúvidas como os autores!</h3>
-          <div class="topicos__simbolos">
-            <img src="../../../assets/icone1.png" alt="icone 1">
-            <img src="../../../assets/icone2.png" alt="icone 2">
-            <img src="../../../assets/icone3.png" alt="icone 3">
-          </div>
-          <p>
-            Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
-          </p>
-          <button><i class="fa-solid fa-plus"></i> criar tópico</button>
-          <hr>
-        </div>
-        <article>
-
-        </article>
-        <article>
-
-        </article>
+        <app-discussoes-topicos></app-discussoes-topicos>
+        <div style="margin-top: 30px;"></div>
+        <app-card></app-card>
+        <div style="margin-top: 17px;"></div>
+        <div></div>
+        <app-card-comentado></app-card-comentado>
       </div>
     </section>
   </div>
-  <footer>
-
-  </footer>
+  <app-footer></app-footer>
 </main>

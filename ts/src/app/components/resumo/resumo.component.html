@@ -1,0 +1,12 @@
+<header>
+  <span>Resumo</span>
+</header>
+<div class="resumo__container" id="resumo" (click)="trocarCondicaoDoResumo()">
+  <div *ngIf="!isActiveResume">
+    {{exibirTodoConteudoDoResumo()}}
+  </div>
+  <div *ngIf="isActiveResume">
+    {{limitarConteudoDoResumo()}} <span id="btVerMais">ver mais</span>
+  </div>
+</div>
+
