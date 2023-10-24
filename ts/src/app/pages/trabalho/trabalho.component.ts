@@ -1,5 +1,4 @@
-import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
-import {trigger, state, style, animate, transition} from '@angular/animations';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-trabalho',

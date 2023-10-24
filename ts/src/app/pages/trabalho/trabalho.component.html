@@ -1,14 +1,4 @@
-<div *ngIf="isMobile; else desktopVersion">
-  <div class="aside-mobile">
-    <app-aside></app-aside>
-  </div>
-</div>
-<ng-template #desktopVersion>
-  <div class="aside-desktop">
-    <app-aside></app-aside>
-  </div>
-</ng-template>
-<!-- ************************************ -->
+<app-aside></app-aside>
 <main>
   <div *ngIf="isMobile; else desktop">
     <app-mobile-header></app-mobile-header>
