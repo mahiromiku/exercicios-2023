@@ -1,0 +1,12 @@
+<article class="resposta__autor {{configurarCorCard()}}">
+  <header>
+    <span>{{nomeUsuario}}</span>
+    <div class="autor {{mostrarAutor()}}">
+      <span class="autor__tipo">{{tipoAutor}}</span>
+      <img src="../../../assets/vv.png" alt="vV">
+    </div>
+  </header>
+  <div class="autor__body" *ngFor="let paragrafo of transformarMensagemEmArray()">
+    <p>{{paragrafo}}</p>
+  </div>
+</article>

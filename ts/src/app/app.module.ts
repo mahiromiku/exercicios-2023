@@ -15,6 +15,7 @@ import { DiscussoesTopicosComponent } from './components/discussoes-topicos/disc
 import { CardComponent } from './components/card/card.component';
 import { CardComentadoComponent } from './components/card-comentado/card-comentado.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ComentarioComponent } from './components/comentario/comentario.component';
 
 const routes: Routes = [
   {path: '', component: TrabalhoComponent}
@@ -33,7 +34,8 @@ const routes: Routes = [
     DiscussoesTopicosComponent,
     CardComponent,
     CardComentadoComponent,
-    FooterComponent
+    FooterComponent,
+    ComentarioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 <article class="card">
   <header>
-    <h3>Assunto da pergunta aparece aqui</h3>
-    <p>Carlos Henrique Santos</p>
+    <h3>{{assuntoDaPergunta}}</h3>
+    <p>{{nomeDoUsuario}}</p>
   </header>
-  <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+  <p>{{mensagem}}</p>
   <footer>
     <button>
       <img src="../../../assets/mais informações.png" alt="mais informacoes">
@@ -12,10 +12,10 @@
       <i class="fa-solid fa-heart"></i>
     </button>
     <span>
-      1 like
+      {{like + ' ' + checarNumeroLike()}}
     </span>
     <span>
-      1 resposta
+      {{resposta + ' ' + checarNumeroResposta()}}
     </span>
   </footer>
 </article>

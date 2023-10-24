@@ -1,4 +1,14 @@
-<app-aside></app-aside>
+<div *ngIf="isMobile; else desktopVersion">
+  <div class="aside-mobile">
+    <app-aside></app-aside>
+  </div>
+</div>
+<ng-template #desktopVersion>
+  <div class="aside-desktop">
+    <app-aside></app-aside>
+  </div>
+</ng-template>
+<!-- ************************************ -->
 <main>
   <div *ngIf="isMobile; else desktop">
     <app-mobile-header></app-mobile-header>
@@ -21,9 +31,14 @@
       <div class="discussoes__container">
         <app-discussoes-topicos></app-discussoes-topicos>
         <div style="margin-top: 30px;"></div>
-        <app-card></app-card>
+        <app-card
+        assuntoDaPergunta="Assunto da pergunta aparece aqui"
+        nomeDoUsuario="Carlos Henrique Santos"
+        mensagem="Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..."
+        like="1"
+        resposta="1"
+        ></app-card>
         <div style="margin-top: 17px;"></div>
-        <div></div>
         <app-card-comentado></app-card-comentado>
       </div>
     </section>
