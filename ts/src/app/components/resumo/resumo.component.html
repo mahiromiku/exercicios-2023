@@ -1,7 +1,7 @@
 <header>
   <span>Resumo</span>
 </header>
-<div class="resumo__container" id="resumo" (click)="trocarCondicaoDoResumo()">
+<div class="resumo__container btn-show-more" id="resumo" (click)="trocarCondicaoDoResumo()">
   <div *ngIf="!isActiveResume">
     {{exibirTodoConteudoDoResumo()}}
   </div>
